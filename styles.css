@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0px solid black;
+}
+
+body {
+    background: #eee;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffd871;
+
+}
+
+#header-logo {
+    width: 140px;
+    height: 150px;
+    margin-left: 40px;
+    
+}
+
+#header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#header-navbar {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header-navbar a {
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid transparent;
+}
+
+#header-navbar a:hover {
+    border-color:rgba(122,122,122,0.8);
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#header-tools {
+    margin-right: 40px;
+    width: 200px;
+    height: 80px;
+}
+
+#main {
+    width: 100%;
+    
+}
+
+#main-search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background: rgb(200, 200, 200);
+}
+
+.title {
+    margin: 40px 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#search-bar {
+    width: 1000px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-text {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#search-btn {
+    width: 120px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#search-btn:hover {
+    color:#eee;
+    font-weight: bold;
+    background: #ffd871;
+    cursor: pointer;
+}
+
+#search-img {
+    margin: 40px 0px;
+    width: 600px;
+    height: 400px;
+}
+
+#main-category {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#category-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.category {
+    width:100%;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(122,122,122,0.8),
+                4px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.subtitle {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.category hr {
+    width: 90%;
+    border: 1px solid rgba(122,122,122,0.8);
+    margin-top: 10px;
+    display: none;
+}
+
+.category img {
+    width: 100%;
+    height: 250px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+#main-principal {
+    width: 100%;
+    background: rgb(200, 200, 200);
+    border: 1px solid transparent;
+}
+
+#principal-grid {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.principal-section {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(122,122,122,0.8),
+                4px 5px 10px;
+
+    margin-bottom: 40px;
+}
+
+.principal-img {
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.principal-text {
+    width: 40%;
+    height: 100%;
+    overflow: auto;
+}
+
+.principal-text::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.principal-text::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.principal-text::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.principal-text::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.principal-text::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.principal-text::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.principal-text p {
+    text-align: justify;
+    margin: 7px 12px;
+}
+
+#footer {
+    width: 100%;
+    background: #ffd871;
+
+}
+
+#footer-flex {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#footer-about {
+    width: 80%;
+    height: 80px;
+}
+
+#footer-rights {
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    background: #eee;
+    text-align: center;
+    padding: 5px 0;
+}
