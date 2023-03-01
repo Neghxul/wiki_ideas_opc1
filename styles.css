@@ -133,16 +133,17 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    overflow: hidden;
+    position: relative;
 }
 
 .subtitle {
     width: 100%;
-    height: 100%;
     font-size: 24px;
     text-align: center;
     padding: 10px 0;
     border-radius: 10px 10px 0 0;
+    z-index: 1000;
 }
 
 .category hr {
@@ -156,6 +157,7 @@ body {
     width: 100%;
     height: 250px;
     border-radius: 0 0 10px 10px;
+    transition: transform .8s ease;
 }
 
 
