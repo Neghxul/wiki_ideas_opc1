@@ -1,12 +1,18 @@
 var imgCategory = document.querySelectorAll('.category img');
+var subCategory = document.querySelectorAll('.category .subtitle');
+var subValue = "";
 
-
-imgCategory.forEach((imgCat, index) => {
-    imgCat.addEventListener('mouseover', () => {
-        imgCat.style.transform = "scale(1.15)";
+subCategory.forEach((subtitle, index) => {
+    subtitle.addEventListener('mouseover', () => {
+        imgCategory[index].style.transform = "scale(1.15)";
+        subtitle.style.opacity = "0.3";
+        subValue = subtitle.innerHTML;
+        subtitle.innerHTML = "";
     });
 
-    imgCat.addEventListener('mouseout', () => {
-        imgCat.style.transform = "scale(1)";
+    subtitle.addEventListener('mouseout', () => {
+        imgCategory[index].style.transform = "scale(1)";
+        subtitle.style.opacity = "1";
+        subtitle.innerHTML = subValue;
     });
 });
