@@ -56,8 +56,48 @@ body {
 
 #header-tools {
     margin-right: 40px;
+    width:140px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#header-tools i {
+    font-size: 25px;
+}
+
+#menu-tools {
+    background: #ffd871;
     width: 200px;
-    height: 80px;
+    position: absolute;
+    top: calc(50% + 12.5px);
+    right: 0
+}
+
+.menu-tools {
+    list-style: none;
+    display:none;
+}
+
+.menu-tools li {
+    padding: 10px 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-tools li:hover {
+    background: #7b6936;
+    color: #eee;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
 }
 
 #main {
@@ -81,7 +121,7 @@ body {
     text-align: center;
 }
 
-#search-bar {
+#search-form {
     width: 1000px;
     display: flex;
     justify-content: center;
@@ -273,8 +313,42 @@ body {
 
 #footer-about {
     width: 80%;
-    height: 80px;
+    display: flex;
+    justify-content: flex-end;
 }
+
+#contact-form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0px;
+}
+
+#contact-form input, #contact-form label {
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+#contact-form button {
+    width: 120px;
+    padding: 5px;
+    background: #000;
+    color: #eee;
+    margin-top: 20px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+#contact-form button:hover {
+    font-weight: bold;
+    background: #eee;
+    color:#000;
+    cursor: pointer;
+}
+
 
 #footer-media i {
     font-size: 30px;
@@ -323,7 +397,7 @@ body {
 }
 
 @media screen and (max-width: 764px) {
-    #search-bar, #search-img {
+    #search-form, #search-img {
         width: 80%;
     }
 

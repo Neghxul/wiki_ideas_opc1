@@ -1,9 +1,9 @@
 var imgCategory = document.querySelectorAll('.category img');
 var subCategory = document.querySelectorAll('.category .subtitle');
 var searchBar = document.querySelector('#search-text');
-var body = document.querySelector('body');
+var toolsBtn = document.querySelector('#header-tools i');
+var toolsMenu = document.querySelector('#menu-tools');
 var subValue = "";
-var barActive = false;
 
 subCategory.forEach((subtitle, index) => {
     subtitle.addEventListener('mouseover', () => {
@@ -27,4 +27,9 @@ document.addEventListener('mouseup', (e) => {
     } else {
         searchBar.style.background = "#fff";
     }
+});
+
+toolsBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    toolsMenu.classList.add('active');
 });
