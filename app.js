@@ -29,7 +29,12 @@ document.addEventListener('mouseup', (e) => {
     }
 });
 
-toolsBtn.addEventListener('click', (e) => {
-    e.preventDefault();
+toolsBtn.addEventListener('mouseover', () => {
     toolsMenu.classList.add('active');
 });
+
+toolsMenu.addEventListener('mouseleave', () => {
+    toolsMenu.classList.remove('active');
+});
+
+
