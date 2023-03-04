@@ -10,11 +10,16 @@ async function handleSubmit(event) {
     event.preventDefault();
     const searchValue = searchInput.value;
     const searchQuery = searchValue.trim();
+    resultsDiv.innerHTML = "";
     console.log(searchQuery);
 
     try {
         const results = await searchWikipedia(searchQuery);
+        if (results.query.searchinfo.totalhits === 0) {
+            alert('No results found. Try different keywords');
+        }
         displayResults(results);
+        resultsDiv.style.display = 'block';
         console.log(results);
     } catch (err) {
         console.log(err);
