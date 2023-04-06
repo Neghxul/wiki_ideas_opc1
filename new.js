@@ -44,8 +44,10 @@ const newTopic = document.querySelector('.new-topic'),
 
         if (newImg.files[0]) {
             const reader = new FileReader();
+            console.log(reader);
 
             reader.addEventListener('load', () => {
+                console.log(reader);
                 imgShow.src = reader.result;
                 imgShow.style.display = 'inline-block';
                 newImg.style.display = 'none';
